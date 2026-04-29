@@ -1,3 +1,4 @@
+// feature/seed-data branch - Generates simulation data: 9 provinces, 25 districts, 20 stations, 200 vehicles, 7 days location history
 require('dotenv').config();
 const mongoose = require('mongoose');
 
