@@ -1,3 +1,4 @@
+// develop branch - All features integrated: auth, vehicles, locations, drivers, users, swagger
 // app.js
 require('dotenv').config();
 const express = require('express');
