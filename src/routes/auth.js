@@ -1,3 +1,4 @@
+// Auth feature branch - handles JWT login
 const express = require('express');
 const router = express.Router();
 const { login } = require('../controllers/authController');
