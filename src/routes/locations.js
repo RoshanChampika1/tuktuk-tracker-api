@@ -1,3 +1,4 @@
+// feature/locations branch - Handles GPS location pings and active vehicle tracking
 const express = require('express');
 const router = express.Router();
 const auth = require('../middleware/auth');
