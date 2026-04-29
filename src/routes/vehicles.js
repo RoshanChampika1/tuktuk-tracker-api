@@ -1,3 +1,4 @@
+// feature/vehicles branch - Handles vehicle registration, management and location sub-routes
 const express = require('express');
 const router = express.Router();
 const auth = require('../middleware/auth');
