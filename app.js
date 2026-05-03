@@ -15,7 +15,15 @@ app.use(express.json());
 
 // Swagger
 const swaggerSpec = swaggerJsdoc({
-  definition: { openapi: '3.0.0', info: { title: 'TukTuk Tracker API', version: '1.0.0' } },
+  definition: {
+    openapi: '3.0.0',
+    info: { title: 'TukTuk Tracker API', version: '1.0.0' },
+    components: {
+      securitySchemes: {
+        bearerAuth: { type: 'http', scheme: 'bearer', bearerFormat: 'JWT' }
+      }
+    }
+  },
   apis: ['./src/routes/*.js']
 });
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
